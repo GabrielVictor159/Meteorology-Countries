@@ -2,7 +2,7 @@ export default function CurrentWeather(name,cidade,pais){
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '2646d5a0f4msh1f3eafc484667b0p199152jsn38aa75093f65',
+            'X-RapidAPI-Key': key,
             'X-RapidAPI-Host': 'aerisweather1.p.rapidapi.com'
         }
     };
