@@ -47,6 +47,10 @@ export default function Map() {
         <Point name={'Copenhagen/Denmark'} size={7} cidade={'Copenhagen'} pais={'dk'} top={360} left={155}/>
         <Point name={'Berlin/Alemanha'} size={10} cidade={'Berlin'} pais={'de'} top={380} left={145}/>
         <Point name={'Warsaw/Polônia'} size={10} cidade={'Warsaw'} pais={'pl'} top={375} left={155}/>
+        <Point name={'Minsk/Belarus'} size={10} cidade={'Minsk'} pais={'Belarus'} top={370} left={170}/>
+        <Point name={'Vilnius/Lithuania'} size={7} cidade={'Vilnius'} pais={'Lithuania'} top={370} left={145}/>
+        <Point name={'Ventispils/Latvia'} size={5} cidade={'Ventspils'} pais={'lv'} top={360} left={140}/>
+        <Point name={'Talín/Estônia'} size={5} cidade={'Talín'} pais={'Estônia'} top={353} left={137}/>
     </div>
   );
 }
