@@ -40,6 +40,13 @@ export default function Map() {
         <Point name={'Buenos Aires/Argentina'} size={15} cidade={'Buenos Aires'} pais={'ar'} top={645} left={75}/>
         <Point name={'Santiago/Chile'} size={10} cidade={'Santiago'} pais={'cl'} top={640} left={33}/>
         <Point name={'Nuuk/Groelandia'} size={20} cidade={'Nuuk'} pais={'gl'} top={210} left={110}/>
+        <Point name={'Moscow/Russia'} size={20} cidade={'Moscow'} pais={'ru'} top={320} left={320}/>
+        <Point name={'tampere/Finlandia'} size={15} cidade={'61.1'} pais={'24.9'} top={310} left={240}/>
+        <Point name={'Stockholm/Sweden'} size={10} cidade={'Stockholm'} pais={'se'} top={310} left={200}/>
+        <Point name={'Oslo/Norway'} size={10} cidade={'Oslo'} pais={'no'} top={330} left={160}/>
+        <Point name={'Copenhagen/Denmark'} size={7} cidade={'Copenhagen'} pais={'dk'} top={360} left={155}/>
+        <Point name={'Berlin/Alemanha'} size={10} cidade={'Berlin'} pais={'de'} top={380} left={145}/>
+        <Point name={'Warsaw/Polônia'} size={10} cidade={'Warsaw'} pais={'pl'} top={375} left={155}/>
     </div>
   );
 }
