@@ -4,9 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "npm install && vite build",
-    "serve": "npm run build && vite preview"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "localforage": "^1.10.0",
