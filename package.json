@@ -24,7 +24,7 @@
   },
   "proxy": {
     "/api/geonames": {
-      "target": "http://api.geonames.org",
+      "target": "https://secure.geonames.org",
       "changeOrigin": true
     },
     "/api/openweathermap": {
