@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "start":"npm run dev"
+    "start": "vite",
+    "build": "vite build && npm install",
+    "preview": "vite preview"
   },
   "dependencies": {
     "localforage": "^1.10.0",
