@@ -15,7 +15,7 @@ export default function Home() {
     useEffect(() => {
        function setCountie(){
         let a=[] 
-        fetch(`/api/geonames/countryInfoJSON?username=${username}`,{
+        fetch(`https://secure.geonames.org/countryInfoJSON?username=${username}`,{
           credentials:'same-origin', referrerPolicy:'unsafe-url'
         })
         .then((response)=>response.json())
@@ -33,7 +33,7 @@ export default function Home() {
     if (selectedCountry) {
         function setState(){
             let a=[] 
-            fetch(`/api/geonames/childrenJSON?geonameId=${selectedCountry.geonameId}&username=${username}`,{
+            fetch(`https://secure.geonames.org/childrenJSON?geonameId=${selectedCountry.geonameId}&username=${username}`,{
               credentials:'same-origin', referrerPolicy:'unsafe-url'
             })
             .then((response)=>response.json())
@@ -52,7 +52,7 @@ export default function Home() {
         if (selectedState) {
             function setCitie(){
                 let a=[] 
-                fetch(`/api/geonames/childrenJSON?geonameId=${selectedState.geonameId}&username=${username}`,{
+                fetch(`https://secure.geonames.org/childrenJSON?geonameId=${selectedState.geonameId}&username=${username}`,{
                   credentials:'same-origin', referrerPolicy:'unsafe-url'
                 })
                 .then((response)=>response.json())
