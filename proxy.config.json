@@ -1,0 +1,12 @@
+[
+    {
+        "/api/geonames/*": {
+          "target": "http://api.geonames.org",
+          "secure": false
+        },
+        "/api/openweathermap/*": {
+          "target": "https://api.openweathermap.org",
+          "secure": false
+        }
+      }
+]

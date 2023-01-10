@@ -16,6 +16,7 @@ export default function Home() {
        function setCountie(){
         let a=[] 
         fetch(`/api/geonames/countryInfoJSON?username=${username}`,{
+          method:'GET',
           mode:'cors'
         })
         .then((response)=>response.json())
@@ -34,6 +35,7 @@ export default function Home() {
         function setState(){
             let a=[] 
             fetch(`/api/geonames/childrenJSON?geonameId=${selectedCountry.geonameId}&username=${username}`,{
+              method:'GET',
               mode:'cors'
             })
             .then((response)=>response.json())
@@ -53,6 +55,7 @@ export default function Home() {
             function setCitie(){
                 let a=[] 
                 fetch(`/api/geonames/childrenJSON?geonameId=${selectedState.geonameId}&username=${username}`,{
+                  method:'GET',
                   mode:'cors'
                 })
                 .then((response)=>response.json())
@@ -70,6 +73,7 @@ export default function Home() {
     
         async function mostWeather (properties) {
             let resposta = await fetch(`/api/openweathermap/data/2.5/weather?${properties}&appid=10c482805f2d9fe4dd442a1157286720`,{
+              method:'GET',
               mode:'cors'
             })
               .then(res => res.json())
