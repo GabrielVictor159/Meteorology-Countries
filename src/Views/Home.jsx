@@ -15,10 +15,7 @@ export default function Home() {
     useEffect(() => {
        function setCountie(){
         let a=[] 
-        fetch(`/api/geonames/countryInfoJSON?username=${username}`,{
-          method:'GET',
-          mode:'cors'
-        })
+        fetch(`/api/geonames/countryInfoJSON?username=${username}`)
         .then((response)=>response.json())
         .then((data)=>{data.geonames.forEach((country)=>{
             a.push({ name: country.countryName, geonameId: country.geonameId, code:country.countryCode })
@@ -34,10 +31,7 @@ export default function Home() {
     if (selectedCountry) {
         function setState(){
             let a=[] 
-            fetch(`/api/geonames/childrenJSON?geonameId=${selectedCountry.geonameId}&username=${username}`,{
-              method:'GET',
-              mode:'cors'
-            })
+            fetch(`/api/geonames/childrenJSON?geonameId=${selectedCountry.geonameId}&username=${username}`)
             .then((response)=>response.json())
             .then((data)=>{data.geonames.forEach((city)=>{
                 a.push({ name: city.toponymName, geonameId: city.geonameId, lat:city.lat, lon:city.lng })
@@ -54,10 +48,7 @@ export default function Home() {
         if (selectedState) {
             function setCitie(){
                 let a=[] 
-                fetch(`/api/geonames/childrenJSON?geonameId=${selectedState.geonameId}&username=${username}`,{
-                  method:'GET',
-                  mode:'cors'
-                })
+                fetch(`/api/geonames/childrenJSON?geonameId=${selectedState.geonameId}&username=${username}`)
                 .then((response)=>response.json())
                 .then((data)=>{data.geonames.forEach((city)=>{
                     a.push({name: city.toponymName, geonameId:city.geonameId, lat:city.lat, lon:city.lng})
@@ -72,10 +63,7 @@ export default function Home() {
         , [selectedState]);
     
         async function mostWeather (properties) {
-            let resposta = await fetch(`/api/openweathermap/data/2.5/weather?${properties}&appid=10c482805f2d9fe4dd442a1157286720`,{
-              method:'GET',
-              mode:'cors'
-            })
+            let resposta = await fetch(`/api/openweathermap/data/2.5/weather?${properties}&appid=10c482805f2d9fe4dd442a1157286720`)
               .then(res => res.json())
             return resposta
           }
