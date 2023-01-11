@@ -69,7 +69,7 @@ export default function Home() {
         , [selectedState]);
     
         async function mostWeather (properties) {
-            let resposta = await fetch(`/api/openweathermap/data/2.5/weather?${properties}&appid=10c482805f2d9fe4dd442a1157286720`)
+            let resposta = await fetch(`https://api.openweathermap.org/data/2.5/weather?${properties}&appid=10c482805f2d9fe4dd442a1157286720`)
               .then(res => res.json())
             return resposta
           }
